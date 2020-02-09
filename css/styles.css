@@ -177,38 +177,26 @@ Pour la wave Ronde (enlever .wave .logoFiller et .logoImg)
     border-bottom: 1px solid red;
 }
 .navbar .btn{
-    border:0.5px solid #FFFFFF;
-    background-color: #3E6487;
-    border-radius: 32px;
     height: 20px;
     width: 62px;
-    box-shadow: 0px 3px 6px #00000029;
-    font-family: GloucesterMT;
     font-size: 14px;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 0;
     margin-right: 40px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
     position: absolute;
     right:0px;
+    padding: 0;
 }
 .navbar .btn:hover{
-    transition-duration: 500ms;
-    border:0.5px solid #3E6487;
-    background-color: #FFFFFF;
-    color: #3E6487;
-    transition-duration: 500ms;
-    transform: scale(1.3);    
+    padding-top: 0;
 }
 .landing {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
+    min-height: 500px;
     display: table;
     z-index: -1;
     top:-75px;
+    box-shadow: 0px 20px 75px #000000;
 }
 .home-inner{
     background-image: url(../img/landing1.png);
@@ -217,7 +205,8 @@ Pour la wave Ronde (enlever .wave .logoFiller et .logoImg)
 	width: 100%;
 	max-width: 100%;
 	position: absolute;
-    top:38%;
+    top:20vh;
+    margin-top: 100px;
     color: #FFFFFF;
     z-index: 1;
 }
@@ -253,7 +242,49 @@ Pour la wave Ronde (enlever .wave .logoFiller et .logoImg)
             transform: translateZ(0);
     will-change: transform;
 }
-
+.btn{
+    border:0.5px solid #FFFFFF;
+    background-color: #3E6487;
+    border-radius: 32px;
+    height: 34px;
+    width: 140px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-family: GloucesterMT;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding-top:3px;
+    transition-property: transform,padding-top;
+    transition-duration: 500ms;
+}
+.btn:hover{
+    transition-duration: 500ms;
+    border:0.5px solid #3E6487;
+    background-color: #FFFFFF;
+    color: #3E6487;
+    transition-duration: 500ms;
+    transform: scale(1.3); 
+    padding-top: 4px;
+}
+.descBack{
+    height: 33px;
+    width: 328px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin: 15px auto 65px auto;
+    border: 2px solid #A19D9FBA;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.titleDesc{
+    color: #3B3636;
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 0.5px 0px #5F515280;
+    font-size: 20px;
+    opacity: 1;
+}
 
 
 @media (min-width: 768px){
