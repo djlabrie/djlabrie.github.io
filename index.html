@@ -7,67 +7,121 @@
     <meta name="description" content="Voici la description du site qui apparait sur google">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=BenchNine&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Header-->
 <header id="home" class="container-fluid header">
     <div class="row">
-        <div class="logoSection col-6">
-            <div class="logoStart"></div>
-            <div class="logo"></div>
-            <div class="logoEnd"></div>
-        </div>
-        <div class="col-6 navSection"></div>
-        <div class="col-6" style="position: relative;">
-            <div class="wave"></div>
-            <div class="logoFiller"></div>
-            <div class="logoImg"></div>
-        </div>
-        <!--Nav Bar-->
-        <div class="offset-2 col-9 navbar">
-            <ul class="nav">
-                <li id="li1"><a id="a1">Hébergement</a></li>
-                <li><a>Activités</a></li>
-                <li><a>Offres</a></li>
-                <li><a>Évènements</a></li>
-                <li><a>Informations</a></li>
-            </ul>
-        <div class="btn">Réserver</div>
-        </div>
-        <!--<img class="mainImg"src="img/landing.png">    --> 
-
-
-        <div class="landing">
-            <div class="home-wrap">
-                <div class="home-inner">				
+        <div class="contenu">
+            <div class="menuLeft">
+                <a href="https://www.facebook.com/" target="_blank"><div class="social facebook"><span class="tooltipText">Facebook</span></div></a>
+                <a href="https://www.instagram.com/" target="_blank"><div class="social insta"><span class="tooltipText tooltipInsta">Instagram</span></div></a>
+                <a href="https://www.twitter.com/" target="_blank"><div class="social twitter"><span class="tooltipText tooltipTwitter">Twitter</span></div></a>
+                <a href="https://www.youtube.com/" target="_blank"><div class="social youtube"><span class="tooltipText tooltipYoutube">Youtube</span></div></a>
+                <a href="https://www.pinterest.com/" target="_blank"><div class="social pint"><span class="tooltipText tooltipPint">Pinterest</span></div></a>
+                <div class="phoneIcon"></div><a href="tel:+1450-886-6829" class="phoneNumber">1 (450) 886-6829</a>
+                <div class="locationArrow"></div><a class="boutton btn1">Nous trouver</a>
+                <!--Setting DropDown-->
+                <div class="setting">
+                    <ul>
+                        <li id="hover1">
+                            <a>Français</a>
+                            <div class="dropLogo"></div>
+                            <div id="languageLogo"></div>
+                            <div id="drop1" class="dropdown">
+                                <a>Français</a>
+                                <a>English</a>
+                            </div>
+                        </li>
+                        <li id="hover2">
+                            <a>Hiver</a>
+                            <div class="dropLogo"></div>
+                            <div id="seasonLogo"></div>
+                            <div id="drop2" class="dropdown">
+                                <a>Printemps</a>
+                                <a>Été</a>
+                                <a>Automne</a>
+                                <a>Hiver</a>
+                            </div>
+                        </li>
+                    </ul>       
                 </div>
             </div>
-        </div>
-        <div class="titre text-center">
-            <h1 class="title1"><span class="fontVivaldi">B</span>ienvenue chez</h1>
-            <h1 class="title2">TranseNature</h1>
-            <div class="descBack">
-            <p class="titleDesc">Hébergement alternatif en nature sauvage</p>
+            <!--Logo -->
+            <div class="logo"></div>
+            <!--Nav Bar-->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a>Hébergement</a>
+                        <span class="navDropdownImg"></span>
+                        <span class="navSpacer"></span>
+                        <div  class="navDropdown">
+                            <a>Tipis</a>
+                            <a>Rustiques</a>
+                            <a>Luxueux</a> 
+                        </div>
+                    </li>
+                    <li>
+                        <a>Activités</a>
+                        <span class="navDropdownImg"></span>
+                        <span class="navSpacer"></span>
+                        <div  class="navDropdown">
+                            <a>Sentiers</a>
+                            <a>Glissade</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a>Offres</a>
+                        <span class="navDropdownImg"></span>
+                        <span class="navSpacer"></span>
+                        <div  class="navDropdown">
+                            <a>Promotions</a>
+                            <a>Forfaits</a> 
+                        </div>
+                    </li>
+                    <li>
+                        <a>Évènements</a>
+                        <span class="navDropdownImg"></span>
+                        <span class="navSpacer"></span>
+                        <div  class="navDropdown">
+                            <a>Calendrier</a>
+                            <a>Au alentours</a> 
+                        </div>
+                    </li>
+                    <li>
+                        <a>Informations</a>
+                        <span class="navDropdownImg"></span>
+                        <div  class="navDropdown">
+                            <a>Nous trouvez</a>
+                            <a>Contact</a>
+                            <a>À propos</a> 
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="btn">réservation</div>
         </div>
-    </div>
-
-
-
-       <!-- <div class="caption text-center">
-            <h1 class="title1"><span class="fontVivaldi">B</span>ienvenue chez</h1>
-            <h1 class="title2">TranseNature</h1>
-            <p>Hebergement</p>
-        </div> -->
+            <!-- Landing Page -->
+            <div class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner"></div>
+                </div>
+            </div>
+            <div class="titre text-center">
+                <h1 class="title1"><span class="fontVivaldi">B</span>ienvenue chez</h1>
+                <h1 class="title2">TranseNature</h1>
+                <div class="descBack">
+                    <p class="titleDesc">Hébergement alternatif en nature sauvage</p>
+                </div>
+                <div class="btn">réservation</div>
+            </div>
     </div>
 </header>
-<div style="width: 100%; height: 1000px;background-color: white;z-index: 9;"></div>
+<div style="width: 100%; height: 1000px;z-index: -1;"></div>
 <!--Section 1-->
 <section>
 
@@ -75,7 +129,7 @@
 
 <!--Section 2-->
 <section>
-    
+
 </section>
 <!--Footer-->
 <footer>
@@ -85,5 +139,6 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br>
+<script src="scripts.js"></script>
 </body>
 </html>
