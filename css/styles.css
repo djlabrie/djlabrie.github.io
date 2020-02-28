@@ -56,16 +56,19 @@
 body {
   overflow-x: hidden;
 }
-
+.conteneur {
+  margin: 0 auto;
+  width: 90⅜;
+}
 /* END OF OVERALL */
 /* LANDING PAGE */
 header {
-  box-shadow: 0px 3px 20px #000000;
   z-index: 9;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-bottom: 30px;
 }
 .landing {
   position: relative;
@@ -75,10 +78,7 @@ header {
   display: table;
   z-index: -1;
   top: 0;
-  box-shadow: 0px 20px 75px #000000;
-}
-.home-inner {
-  background-image: url(../img/landingImg.png);
+  box-shadow: 0px 3px 40px #000000;
 }
 .home-wrap {
   clip: rect(0, auto, auto, 0);
@@ -86,16 +86,18 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  min-height: 650px;
 }
 .home-inner {
   position: fixed;
   display: table;
+  background-image: url(../img/landingImg.png);
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  min-height: 600px;
+  height: 100vh;
+  min-height: 650px;
   background-size: cover;
   background-position: -50px center;
   -webkit-transform: translateZ(0);
@@ -369,6 +371,20 @@ header {
   background-position: center;
   margin: 0 5px;
 }
+.dropArrow {
+  position: absolute;
+  background-image: url(../img/bigDownArrowWhite.png);
+  height: 46px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 200%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 /* END OF LOGO */
 .titre {
   width: 100%;
@@ -436,7 +452,105 @@ header {
   text-transform: uppercase;
 }
 /* END OF LANDING PAGE */
-
+/* SECTION 1 CAT */
+.hr1,
+.hr2 {
+  border-top: 2px solid #5f5152;
+  z-index: 10;
+}
+.hr1 {
+  width: 90%;
+}
+section h2 {
+  font-size: 16px;
+  font-family: "benchninebold";
+  letter-spacing: 0.16px;
+  color: #5f5152;
+  text-shadow: 0px 1px 10px #00000029;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: -25px;
+  padding: 0 10px;
+  background-color: white;
+}
+.type-box {
+  border: 1px solid red;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 53px;
+  text-align: center;
+  background: rgba(95, 81, 82, 0.65) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 25px #000000;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  border-radius: 11px;
+  padding-bottom: 7px;
+}
+.plume {
+  background-image: url(../img/feathers.png);
+  background-size: 200px 203px;
+  padding-bottom: 7px;
+  background-position-y: 40px;
+  background-position-x: center;
+}
+.hache {
+  background-image: url(../img/axe.png);
+  background-size: 200px 203px;
+  padding-bottom: 7px;
+  background-position-y: 40px;
+  background-position-x: center;
+}
+.prise {
+  background-image: url(../img/greenEnergy.png);
+  background-size: 200px 203px;
+  padding-bottom: 7px;
+  background-position-y: 40px;
+  background-position-x: center;
+}
+.type-box h3 {
+  font-family: "benchnineregular";
+  margin-top: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
+  color: #3e6487;
+  text-shadow: 0px 1px 7px #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.type-box p {
+  border-radius: 6px;
+  background-color: #5f5152;
+  opacity: 0.8;
+  width: 188px;
+  margin: 0 auto;
+  box-shadow: 0px 1px 20px #ffffffbf;
+  padding: 9px 17px;
+  color: #fff;
+  font-family: "benchninelight";
+  font-size: 12px;
+  margin-bottom: 21px;
+}
+.type-box .type-logo {
+  width: 88px;
+  height: 88px;
+  border: 2px solid #3e6487;
+  box-shadow: 0px 1px 25px #ffffff;
+  background-color: white;
+  border-radius: 50%;
+  background-image: url(../img/tipi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  margin: 0 auto;
+  margin-top: -33px;
+}
+.type-box .btn {
+  font-family: "benchninelight";
+  font-size: 17px;
+  width: 115px;
+}
 /*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
