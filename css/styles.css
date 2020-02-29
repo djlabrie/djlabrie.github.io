@@ -57,7 +57,7 @@ html {
   overflow: hidden;
 }
 body {
-  background-color: blue;
+  background-color: #f3f3f3;
   overflow-x: hidden;
 }
 .wrapper {
@@ -374,17 +374,10 @@ header {
   margin: 0 5px;
 }
 .dropArrow {
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
   text-align: center;
-  background-size: 200%;
-  bottom: 47px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
-  z-index: 10;
+  top: 92%;
 }
 /* END OF LOGO */
 .titre {
@@ -394,6 +387,8 @@ header {
   top: 0;
   color: #ffffff;
   z-index: 1;
+  height: 100%;
+  min-height: 600px;
 }
 .spacer {
   height: 100px;
@@ -448,7 +443,7 @@ header {
   opacity: 0.74;
   margin: 0 auto;
   width: 235px;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
 }
 .titleDesc {
   color: #fff;
@@ -460,7 +455,8 @@ header {
 /* END OF LANDING PAGE */
 /* SECTION 1 CAT */
 .hr1,
-.hr2 {
+.hr2,
+.hr-end {
   border-top: 2px solid #5f5152;
   z-index: 10;
 }
@@ -478,7 +474,7 @@ section h2 {
   margin: 0 auto;
   margin-top: -25px;
   padding: 0 10px;
-  background-color: white;
+  background-color: #f3f3f3;
 }
 .type-box {
   border: 1px solid red;
@@ -502,16 +498,16 @@ section h2 {
 }
 .hache {
   background-image: url(../img/axe.png);
-  background-size: 200px 203px;
+  background-size: 175px;
   padding-bottom: 7px;
-  background-position-y: 40px;
+  background-position-y: 55px;
   background-position-x: center;
 }
 .prise {
   background-image: url(../img/greenEnergy.png);
-  background-size: 200px 203px;
+  background-size: 185px;
   padding-bottom: 7px;
-  background-position-y: 40px;
+  background-position-y: 50px;
   background-position-x: center;
 }
 .type-box h3 {
@@ -544,20 +540,105 @@ section h2 {
   box-shadow: 0px 1px 25px #ffffff;
   background-color: white;
   border-radius: 50%;
-  background-image: url(../img/tipi.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 75%;
+  background-position-x: center;
   margin: 0 auto;
   margin-top: -33px;
+}
+.plume .type-logo {
+  background-image: url(../img/tipi.png);
+  background-size: 55%;
+  background-position-y: 7px;
+}
+.hache .type-logo {
+  background-image: url(../img/chalet.png);
+  background-size: 55%;
+  background-position-y: 7px;
+}
+.prise .type-logo {
+  background-image: url(../img/deluxeChalet.png);
+  background-size: 85%;
+  background-position-y: 12px;
+}
+.type-logo span {
+  position: relative;
+  top: 50px;
+  font-family: "benchnineregular";
+  font-size: 18px;
+  color: #5f5152;
+  text-shadow: 0px 3px 6px #00000029;
 }
 .type-box .btn {
   font-family: "benchninelight";
   font-size: 17px;
   width: 115px;
 }
-
+.hr-end {
+  margin-top: 41px;
+  margin-bottom: 20px;
+  width: 85%;
+}
+.camera {
+  margin: 0 auto;
+  width: 31px;
+}
+.subtitle {
+  display: block;
+  margin: 0 auto;
+  border: 0.5px solid #3e6487;
+  border-radius: 8px;
+  background: #5f5152 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 15px #000000;
+  letter-spacing: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "benchninebold";
+  font-size: 17px;
+  padding: 5px 15px;
+  margin-top: 18px;
+}
+/* CAT 1 SLIDER */
+.background {
+  background-image: linear-gradient(90deg, rgba(95, 81, 82, 0.65) 0%, rgba(0, 0, 0, 0.35) 18%, rgba(0, 0, 0, 0.3) 52%, rgba(0, 0, 0, 0.35) 88%, rgba(95, 81, 82, 0.65) 100%), url(../img/arbre.png);
+  background-size: cover;
+  background-position: center center;
+}
+.slider {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(167, 167, 167);
+  margin-top: 60px;
+}
+.subtitle2 {
+  display: block;
+  margin: 0 auto;
+  background: #0000002f 0% 0% no-repeat padding-box;
+  border: 0.5px solid #ffffffbb;
+  letter-spacing: 0;
+  color: #ffffffbb;
+  text-transform: uppercase;
+  font-family: "benchninebold";
+  font-size: 15px;
+  padding: 5px 15px;
+  margin-top: 18px;
+  margin-bottom: 50px;
+}
+.img-container {
+  text-align: right;
+}
+.img-container img {
+  position: relative;
+  top: calc(50% - 97px);
+}
+.text-container {
+  color: white;
+  opacity: 0.79;
+  font-size: 15px;
+  font: "benchninebold";
+  padding-right: 10%;
+  margin-bottom: 50px;
+}
 /*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
