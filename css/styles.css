@@ -73,8 +73,10 @@
   overflow: hidden;
 }
 body {
-  overflow-x: hidden;
   background-color: tomato;
+}
+.wrapper {
+  overflow-x: hidden;
   width: 100vw;
 }
 .conteneur {
