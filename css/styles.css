@@ -571,9 +571,6 @@ section h2 {
 @media (min-width: 1200px) { ... }*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
-    overflow: hidden !important;
-  }
-  .wrapper {
     overflow-x: hidden !important;
   }
 }
