@@ -76,8 +76,9 @@ body {
   background-color: tomato;
 }
 .wrapper {
-  overflow-x: hidden;
-  width: 100vw;
+  position: relative;
+  overflow-x: hidden !important;
+  width: 100%;
 }
 .conteneur {
   margin: 0 auto;
@@ -92,11 +93,10 @@ header {
   -ms-user-select: none;
   user-select: none;
   margin-bottom: 30px;
-  width: 100vw;
 }
 .landing {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-height: 650px;
   display: table;
@@ -109,7 +109,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-height: 650px;
 }
@@ -119,7 +119,7 @@ header {
   background-image: url(../img/landingImg.png);
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   min-height: 650px;
   background-size: cover;
