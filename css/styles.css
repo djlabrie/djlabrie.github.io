@@ -31,6 +31,25 @@
 }
 /* END OF FONT */
 /* OVERALL */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .arrow-hover {
   background-image: url(../img/whiteUpArrow.png) !important;
 }
@@ -55,6 +74,8 @@
 }
 body {
   overflow-x: hidden;
+  background-color: tomato;
+  width: 100vw;
 }
 .conteneur {
   margin: 0 auto;
@@ -69,10 +90,11 @@ header {
   -ms-user-select: none;
   user-select: none;
   margin-bottom: 30px;
+  width: 100vw;
 }
 .landing {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   min-height: 650px;
   display: table;
@@ -85,7 +107,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   min-height: 650px;
 }
@@ -95,7 +117,7 @@ header {
   background-image: url(../img/landingImg.png);
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   min-height: 650px;
   background-size: cover;
