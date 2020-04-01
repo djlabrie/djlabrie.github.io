@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+.cat{
+    border:1px solid black;
+    display: inline-grid;
+    width: 250px;
+    height: 230px;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+h2{
+    border-bottom: 1px solid black;
+    margin: 15px 25px 0 25px;
+    padding-bottom: 10px;
+    height: 30px;
+}
+hr{
+    display: none;
+}
